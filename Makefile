@@ -1,7 +1,3 @@
-all: sine ack
-
-CFLAGS=-lm
-
-sine: sine.c
+all: ack
 
 ack: ack.c
