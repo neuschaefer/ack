@@ -511,6 +511,8 @@ reparse:
 				int t;
 				ch = seq_read_int(seq, &t, 0);
 				seq->samples_per_tick = 60 * global.sample_rate / t;
+
+				goto reparse;
 			}
 			break;
 		case '/':
