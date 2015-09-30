@@ -150,7 +150,7 @@ struct adsr {
 	int samples_done;
 };
 
-adsr_init(struct adsr *adsr)
+void adsr_init(struct adsr *adsr)
 {
 	adsr->attack = 15;
 	adsr->decay = 40;
